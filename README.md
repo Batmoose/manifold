@@ -36,7 +36,7 @@ The message will appear in the browser console.
 	
 	//using process.send() example
 	process.send({
-		title: 'Success', //this key and value pair can be anything
+		title: 'Success',     //this key and value pair can be anything
 		message: 'All's good!'//this key name must be 'message' or 'error'
 	});
 
