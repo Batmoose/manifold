@@ -1,0 +1,29 @@
+{
+  "name": "exp-manifold",
+  "version": "0.0.0",
+  "description": "A simple server for microfluidic experiments",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Batmoose/manifold.git"
+  },
+  "keywords": [
+    "microfluidics",
+    "microfluidic",
+    "experiment",
+    "controller"
+  ],
+  "dependencies" : {
+    "mime": "https://github.com/broofa/node-mime.git#master",
+    "socket.io": "https://github.com/LearnBoost/socket.io.git#master",
+    "know-your-http-well": "https://github.com/andreineculau/know-your-http-well.git"
+  },
+  "author": "Gabriel Rossmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Batmoose/manifold/issues"
+  }
+}
