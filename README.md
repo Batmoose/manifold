@@ -14,7 +14,7 @@ Simply write `var jfive = require('johnny-five');` at the beginning of an experi
 The editor will display, begin writing your experiment!  
 #####Editor Commands
 
-Write the name of an experiment in the input field, then:
+Write the name of an experiment in the input field, then, while your cursor is in the editor:
 
 `ctrl+s` to save the experiment written inside the editor
 
@@ -42,6 +42,8 @@ The message will appear in the browser console.
 
 In the browser console you will see `message: All's good!`
 
+#####Executing an experiment
 
+Once you have executed an experiment (see above) the browser console will display whether or not the experiment was executed successfully.
 
 
