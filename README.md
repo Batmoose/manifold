@@ -40,7 +40,7 @@ The message will appear in the browser console.
 		message: 'All's good!'//this key name must be 'message' or 'error'
 	});
 
-In the browser you will see `message: All's good!`
+In the browser console you will see `message: All's good!`
 
 
 
