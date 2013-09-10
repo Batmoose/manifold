@@ -46,4 +46,8 @@ In the browser console you will see `message: All's good!`
 
 Once you have executed an experiment (see above) the browser console will display whether or not the experiment was executed successfully.
 
+##Diagrams
+![Software-hardware flowchard](https://raw.github.com/Batmoose/manifold-images/master/SW%20Architecture.png)
+![Example setup](https://raw.github.com/Batmoose/manifold-images/master/manifold%20assembly.png)
+
 
