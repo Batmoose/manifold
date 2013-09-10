@@ -83,7 +83,7 @@ Once you have executed an experiment (see above) the browser console will displa
 		process.send({
 			title: 'init',
 			message: 'board ready, starting experiment'
-		})
+		});
 		var valves = [],
 		i1 = 0,
 		i2 = 1;
