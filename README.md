@@ -22,7 +22,7 @@ Write the name of an experiment in the input field, then, while your cursor is i
 
 `ctrl+o` to open an experiment into the editor
 
-> **Include the appropriate extension**.
+> Include the appropriate extension.
 
 `ctrl+e` to execute a **saved** experiment
 
