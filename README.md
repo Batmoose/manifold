@@ -93,15 +93,15 @@ Once you have executed an experiment (see above) the browser console will displa
 			if(valves[i2])
 				valves[i2].off();
 			i1 = (i1 + 1) % 8;
-			if(!valves[i1]){
+			if(!valves[i1])
 				valves[i1] = new five.Led(i1 + 26);
-				valves[i1].on();
-			}
+			valves[i1].on();
+			
 			i2 = (i2 + 1) % 8;
-			if(!valves[i2]){
+			if(!valves[i2])
 				valves[i2] = new five.Led(i2 + 26);
-				valves[i2].on();
-			}
+			valves[i2].on();
+			
 		}, 100);
 	});
 	/* Actuates a pair of valves connected to two adjacent pins,
