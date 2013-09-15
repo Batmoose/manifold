@@ -19,7 +19,8 @@
   "dependencies" : {
     "mime": "https://github.com/broofa/node-mime.git#master",
     "socket.io": "https://github.com/LearnBoost/socket.io.git#master",
-    "know-your-http-well": "https://github.com/andreineculau/know-your-http-well.git"
+    "know-your-http-well": "https://github.com/andreineculau/know-your-http-well.git",
+    "Johnny-five": "https://github.com/rwaldron/johnny-five.git"
   },
   "author": "Gabriel Rossmann",
   "license": "MIT",
