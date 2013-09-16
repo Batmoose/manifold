@@ -34,7 +34,7 @@ This server runs on Node.js, you will need to install it and set up a working di
 All the module dependencies are listed in `package.json`.  
 ######How does an experiment interface with an Arduino board?
 [johnny-five]: https://github.com/rwaldron/johnny-five "Johnny-five Arduino Interface"
-[johnny-five][] takes care of that, consult its documentation for further details.
+[johnny-five][] takes care of that, consult its documentation for further details.  
 Simply write `var five = require('johnny-five');` at the beginning of an experiment to access the module.  
 Note that [Johnny-five][] requires additional setup, including the installation of [Arduino IDE](http://arduino.cc/en/main/software). 
 
