@@ -4,10 +4,12 @@ manifold
 ####A simple server for managing microfluidic experiments  
 ###About
 This is a server that allows you to, with an Arduino board, remotely control a solenoid valve manifold. It serves a webpage containing an editor and an HTML input field. Using the editor, keyboard shortcuts, and the input field you can save, open, and execute javascript experiments. These experiments can, in turn, send messages back to the browser as they are executed on the server.
-###How does an experiment interface with an Arduino board?
-[johnny-five]: https://github.com/rwaldron/johnny-five "Johnny-five Arduino Interface"
-An [existing node package][johnny-five] takes care of that (consult its documentation).  
-Simply write `var five = require('johnny-five');` at the beginning of an experiment to access the module.
+######Objectives
+* Open source hardware and software
+* Flexible and affordable (total part cost < $100)
+* Can be controlled over the Internet from any browser
+* Experiments can simultaneously control a valve manifold and read sensor input data
+
 ##How-to
 #####Required Hardware
 	
@@ -23,14 +25,18 @@ Simply write `var five = require('johnny-five');` at the beginning of an experim
 	―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 	SainSmart
 	sensor shield  Amazon      $18.00          1        $18.00 
-	――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+	―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 	Dupont Cables  Multiple    $10.00          1        $10.00
 	                                                    ━━━━━━
 	                                                    $87.81
 #####Required Software
 This server runs on Node.js, you will need to install it and set up a working directory.  
-[Johnny-five][] requires additional setup, including the installation of [Arduino IDE](http://arduino.cc/en/main/software).  
 All the module dependencies are listed in `package.json`.  
+######How does an experiment interface with an Arduino board?
+[johnny-five]: https://github.com/rwaldron/johnny-five "Johnny-five Arduino Interface"
+[johnny-five][] takes care of that, consult its documentation for further details.
+Simply write `var five = require('johnny-five');` at the beginning of an experiment to access the module.  
+Note that [Johnny-five][] requires additional setup, including the installation of [Arduino IDE](http://arduino.cc/en/main/software). 
 
 --
 #####Starting the server
@@ -107,8 +113,8 @@ Once you have executed an experiment (see above) the browser console will displa
 	/* Actuates a pair of valves connected to two adjacent pins,
 	ranging from pin #26 to pin #33. If the Arduino board is
 	successfully initialized, it reports it back to the client*/
-	
 
+****
 ##Diagrams
 ![Software-hardware flowchard](https://raw.github.com/Batmoose/manifold-images/master/SW%20Architecture.png)
 
